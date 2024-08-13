@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background-color: #fff;
+}
+
+.main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 89%;
+  width: 79%;
+  background-color: #fff;
+  padding: 50px;
+}
+
+.main form {
+  width: 100%;
+  padding: 40px;
+  border-radius: 25px;
+  background-color: rgb(135, 123, 233);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  gap: 13px;
+}
+
+.wrapper-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  flex-direction: column;
+  padding: 16px;
+  background-color: rgb(105, 187, 168);
+  margin-bottom: 20px;
+  border-radius: 25px;
+  height: 180px;
+}
+
+.converter-image {
+  width: 45px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .main {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .wrapper-select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  form {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper-select {
+    width: 90%;
+  }
+
+  .main {
+    padding: 10px;
+  }
+
+  .converter-image {
+    width: 35px;
+  }
+
+  form {
+    padding: 15px;
+  }
+}
